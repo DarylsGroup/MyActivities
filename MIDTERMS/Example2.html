@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Add some basic styling for clarity */
+    pre {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    // Dito Yung Upper Na Diamond Hollow
+    let digit = 5; 
+        for (let i = 1; i <= digit; i++) { 
+    let str = ''
+    for (let j = 1; j < 2 * digit; ++j) { 
+        if (i + j > digit + 1 && (i > j - digit + 1)) 
+            str += ' '; 
+        else
+            str += '+'; 
+    } 
+  
+    console.log(str); 
+} 
+ // Dito Yung Lower Na Diamond Hollow
+for (let i = digit - 1; i >= 1; i--) { 
+    let str = ''
+    for (let j = 1; j < 2 * digit; ++j) { 
+        if (i + j > digit + 1 && (i > j - digit + 1)) 
+            str += ' '; 
+        else
+            str += '+'; 
+    } 
+  
+    console.log(str); 
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion Calculator</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .window {
+            width: 200px;
+            height: 200px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            backdrop-filter: blur(20px) brightness(200%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            background-color: #fcd08a;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+
+        form {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="window">
+            <h1>Unit Converter</h1>
+            <form action="unitConverter.php" method="post">
+                <label for="InputUnit">Enter Speed:</label>
+                <input type="text" id="InputUnit" name="unit" required>
+                <br>
+                <label for="conversionType">Convert to:</label>
+                <select id="conversionType" name="conversionType" required>
+                    <option value="m_to_mile">meter (m) to mile</option>
+                    <option value="mile_to_km">mile to kilometer (km)</option>
+                    <option value="km_to_m">kilometer (km) to meter (m)</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Convert">
+            </form>
+        </div>
+    </center>
+</body>
+</html>

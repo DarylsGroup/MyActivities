@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Midterm Laboratory Activity No. 2</title>
+</head>
+<body>
+    <h1>Midterm Laboratory Activity No. 2 - Hollow Diamond</h1>
+    <h5>Name: John Daryl Lucero</h5>
+    <h5>Submitted To: Mr. Carl Jonar Palado</h5>
+    <script>
+        let Num = 10;
+
+        // Loop for the upper part of the diamond
+        for (let i = 1; i <= Num; i++) {
+            let pattern = '';
+            for (let j = 1; j < 2 * Num; ++j) {
+                if (i + j > Num + 1 && (i > j - Num + 1))
+                    pattern += ' ';
+                else
+                    pattern += '@';
+            }
+            console.log(pattern);
+        }
+
+        // Loop for the lower part of the diamond
+        for (let i = Num - 1; i >= 1; i--) {
+            let pattern = '';
+            for (let j = 1; j < 2 * Num; ++j) {
+                if (i + j > Num + 1 && (i > j - Num + 1))
+                    pattern += ' ';
+                else
+                    pattern += '@';
+            }
+            console.log(pattern);
+        }
+    </script>
+</body>
+</html>

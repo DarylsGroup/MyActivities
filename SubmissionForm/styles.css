@@ -1,0 +1,140 @@
+
+/*Syempre di mawawala body mwehehe*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('BG2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Style the form container */
+form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+/* Style the form header */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+}
+
+/* Style form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style text input fields */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* I Seperated the input Password for size seperation*/
+input[type="password"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style radio and checkbox labels */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #393b3f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #494c50;
+}
+
+/* Style the select element */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Add some spacing between form elements */
+br {
+    clear: both;
+}
+
+/* Style form validation error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Center the form vertically and horizontally */
+form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.box{
+    background: #fff;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #009688;
+    padding: 40px;
+    box-shadow:
+        inset #031296 0 0 0 5px, 
+      inset #1f0d72 0 0 0 1px, 
+      inset #080a88 0 0 0 10px, 
+      inset #130b85 0 0 0 11px, 
+      inset #8ce9ff 0 0 0 16px, 
+      inset #48e4d6 0 0 0 17px, 
+      inset #e5f9f7 0 0 0 21px, 
+      inset #bfecf7 0 0 0 22px;
+    text-shadow: 3px 3px 1px #bfecf7;
+  }
+

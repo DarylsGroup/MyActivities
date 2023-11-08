@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Factorial</title>
+</head>
+<body>
+
+<h2> FACTORIAL CALCULATOR</h2>
+
+<label for="varRows">Enter the number:</label>
+<input type="number" id="varRows" min="1">
+<button onclick="Table()">Show Result</button>
+
+<pre id="output"></pre>
+
+<script>
+function calcFactorial(intNum) {
+  let fact = 1;
+  for (let initialize = 1; initialize <= intNum; initialize++) {
+    fact *= initialize;
+  }
+  return fact;
+}
+
+function displayFactTable(varRows) {
+  let output = "";
+  for (let initialize = 1; initialize <= varRows; initialize++) {
+    for (let column = 1; column <= varRows; column++) {
+      let result = calcFactorial(initialize * column);
+      if (initialize === varRows && column === varRows) {
+        result = result.toExponential(2).replace('e', 'E');
+      }
+      output += result + " ";
+    }
+    output = output.trim();
+    output += "\n";
+  }
+  document.getElementById("output").textContent = output;
+}
+
+
+function Table() {
+  const numRowsInp = document.getElementById("varRows");
+  const varRows = parseInt(numRowsInp.value);
+
+  if (!isNaN(varRows) && varRows >= 1) {
+    displayFactTable(varRows);
+  } else {
+    alert(" Invalid integer.");
+    alert(" Please Enter Postive Integer.");
+  }
+}
+</script>
+
+</body>
+</html>

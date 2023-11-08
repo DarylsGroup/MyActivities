@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students Information</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="box">
+    <h1>Students Information</h1>
+    </div>
+    <form action="process.php" method="post">
+      <label for="text_input">First Name:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">Last Name:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">Street Address:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">Address Line 2:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="select_option">Select Country:</label>
+      <select id="select_option" name="select_option">
+        <option value="option1">Afghanistan</option>
+        <option value="option2">Australia</option>
+        <option value="option3">Bahamas</option>
+        <option value="option4">Bolivia</option>
+        <option value="option5">Canada</option>
+        <option value="option6">Colombia</option>
+        <option value="option7">Denmark</option>
+        <option value="option8">Indonesia</option>
+        <option value="option9">Japan</option>
+        <option value="option10">Peru</option>
+        <option value="option11">Philippines</option>
+        <option value="option12">Vietnam</option>
+        <option value="option13">Zambia</option>
+      </select>
+      <br>
+      <br>
+      <label>Sex:</label>
+      <br>
+      <input type="radio" id="radio_option1" name="radio_option" value="Option 1">
+      <label for="radio_option1">Male</label>
+      <br>
+      <input type="radio" id="radio_option2" name="radio_option" value="Option 2">
+      <label for="radio_option2">Female</label>
+      <br>
+      <input type="radio" id="radio_option2" name="radio_option" value="Option 2">
+      <label for="radio_option2">Others</label>
+      <br>
+      <br>
+      <label>Civil Status:</label>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Single</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Married</label>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option3">Divorced</label>
+      <br>
+      <br>
+      <label for="date_input">Date:</label>
+      <input type="date" id="date_input" name="date_input">
+      <br>
+      <br>
+      <label for="email_input">Email:</label>
+      <input type="email" id="email_input" name="email_input" required>
+      <br>
+      <br>
+      <label for="password_input">Password:</label>
+      <input type="password" id="password_input" name="password_input" required>
+    
+      <br>
+      <br>
+      <label for="text_input">1. What is your student ID or enrollment number?</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <label for="text_input">2. Major or Program of Study:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">3. Expected Graduation Date:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label>4. Are you an international student?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <br>
+      <label for="text_input">4. Passport Number (if applicable):</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">5. Emergency Contact Name:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">6. Emergency Contact Phone Number:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label>5. Do you have any medical conditions or allergies?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <br>
+      <label>6. Are you a member of any student clubs or organizations?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <br>
+      <label>7. Do you require any special accommodations or support services?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <br>
+      <label for="text_input">8. Which Subjects Are You Struggling With?</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label>9. Is the School Providing Adequate Learning Resources?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <br>
+      <label>10. How Comfortable Are You Seeking Assistance From Classmates?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Very Comfortable
+      </label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Somewhat Comfortable</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Not Comfortable</label>
+      <br>
+      <br>
+      <label for="text_input">11. How Many Hours Do You Spend on Homework Each Day?</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">12. What Are Your Proudest Achievements This Year?</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">13. What Do You Like Most/Least About School</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label>14. After School Activities and Hobbies</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Watch Porn</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Playing Video Games</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Play sports</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Something else</label>
+      <br>
+      <br>
+      <label>15. How Accessible Is Your Teacher for Questions and Assistance?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Very</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Something Accessible</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Not Accessible</label>
+      <br>
+      <br>
+      <label>16.After each test, does your teacher help you in understanding ways to improve your grades?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Maybe</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <br>
+      <label>17. Do you think that the school provides you with adequate sports facilities?</label>
+      <br>
+      <br>
+      <input type="checkbox" id="checkbox_option1" name="checkbox_option1" value="Option 1">
+      <label for="checkbox_option1">Yes</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">No</label>
+      <br>
+      <input type="checkbox" id="checkbox_option2" name="checkbox_option2" value="Option 2">
+      <label for="checkbox_option2">Not Always</label>
+      <br>
+      <br>
+      <label for="text_input">18. On a scale of 1-10, how would you rate the quality of the following facilities at your school:</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <label for="text_input">19. How convinced are you with the school policies?</label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br><label for="text_input">20. Overall, does this course meet your expectations? </label>
+      <input type="text" id="text_input" name="text_input" required>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>

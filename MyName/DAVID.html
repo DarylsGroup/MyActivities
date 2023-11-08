@@ -1,0 +1,332 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+   
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+h1{
+  font-size: 100px;
+  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(19, 2, 116);
+  padding:16px;
+  font-weight:lighter;
+  -moz-box-shadow: 2px 2px 6px #888;  
+  -webkit-box-shadow: 2px 2px 6px #888;  
+  box-shadow:2px 2px 6px #888;  
+  text-align:center;
+  display:block;
+  margin:16px;
+  background-image:url(images/background-h1-wood.jpg);  
+
+}
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(153, 0, 0);  
+  background-image: url("BG.jpg");
+}  
+.container {  
+    padding: 10px;  
+    background-color: rgb(255, 255, 255);  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #ffffff;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(255, 255, 255);  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+ 
+ 
+.registerbtn {  
+  background-color: #ffffff;  
+  color:rgb(255, 255, 255);  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 40;  
+}  
+</style>  
+  
+<form>  
+
+      <center>  <h1> Apply Job Online</h1> </center>  
+  <hr>  
+  <center>
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="" size="15"required />   
+<div>  
+<label>   
+    Bachelor degree Course:  
+</label>  
+  
+<select>  
+<option value="Course">Bachelor degree Course</option>  
+<option value="BSIT">BSIT</option>  
+<option value="BSBA">BSBA</option>  
+<option value="HRM">HRM</option> 
+   
+
+
+<br>  
+<br>  
+<br>  
+<br>  Select a date: <input type = "date">   
+
+    
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+63" size="2"/>   
+   
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <br>
+<button type="reset" value="submit">Reset</button>  
+</form>  
+<br>
+<style>  
+div  
+{  
+padding: 10px 0;  
+}  
+</style>  
+<br>
+<html>
+<button type="submit" VALUE="SUBMIT"> SUBMIT </button>  <br>
+<br><br>
+<br><br>
+<br> 
+<br>
+</html>
+  </fieldset>
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<label class="left">
+    *Job want to apply?</label>
+  <br>
+ <ul style="list-style: none;" class="right">
+
+   <li class="checkbox"><label><input type="checkbox" name="game" value="exodus" >Data Analyst</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="alcatraz">Web Dev</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="aokigahara" >IT Specialist<label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="mausoleum" >Software Engr</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="castiglione" >Database Manager</label></li>
+       </ul></div></fieldset>
+ <br>
+    <fieldset class="fieldset">
+  <div class="sub-group">
+  <label class="left" id="left-radio">Are you ready to take a job?</label>
+  <br>
+   <ul style="list-style: none" class="right">
+       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+   </ul>
+  </div></fieldset>
+<br> 
+</div>
+<fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Do you manage conflict well?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Do you manage pressure well?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Are you a goal-oriented employee?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Are you a team player?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Have you done anything to enhance your skillset?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Are you ready to put this company before your own personal interests?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Do you handle criticism well?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Are you okay with the amount of travel required for this position?All these inquiries could be answered with a simple yes or no response; however, the hiring manager is looking for something more than that.</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Are our customer representatives polite?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Do you find our customer representatives technically prudent and knowledgeable?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Was it easy to find what you were looking for on the website?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">Have you used our services in the past?</label>
+    <br>
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+     </ul>
+    </div></fieldset>
+  <br> 
+  </div>
+
+  </body>
+</html>
+
+
+   
+
+  
+ <!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<form action="logout.php" method="post"> 
+  <input type="submit" value="Apply"> 
+</form> 
+</body>
+
+</html>  
+   
